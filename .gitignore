@@ -4,3 +4,14 @@
 # ignore ALL files in ANY directory named data
 data/
 
+# ignore checkpoints
+.ipynb_checkpoints
+
+# ignore items that had to be setup this way for the model.
+test_features
+train_features
+model.pth
+model10e.pth
+test_features.csv
+train_features.csv
+train_labels.csv
