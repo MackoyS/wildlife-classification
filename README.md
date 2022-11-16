@@ -20,53 +20,53 @@ I.e. send tougher images to a trained analyst.
 My final CNN based image classification system has an overall accuracy of 86%. This means that if an image is provided to my model, it has an 86% probability of correctly identifying the image. As a side note, this breakdown does change between image classes with blank images having a 95% accuracy score for example.
 
 ## The Notebooks
-This project is completed through the jupyter notebook labeled as ‘main_notebook.ipynb’.
+This project is completed through the jupyter notebook labeled as `main_notebook.ipynb`.
 
 ## Dataset
 The dataset can be found here and can be downloaded in a zipped folder. The dataset inside of this folder are:
 
-Test_features.csv, train_features.csv, train_labels.csv .
+Test_features.csv, train_features.csv, and train_labels.csv.
 
 This dataset came with fully completed annotations for each of the image classifications. A future step that I wish to do with this dataset is to try and rotate/flip the images to see if this will increase model performance. After the images and labels were imported I then decided to view a few of these pictures.
 
 ## EDA
-As previously stated there are 8 image classes in this dataset, with those 8 being labeled as:
-‘antelope_duiker'
- 'bird'
- 'blank'
- 'civet_genet'
- 'hog'
- 'leopard'
- 'monkey_prosimian'
- 'Rodent'
+As previously stated there are 8 image classes in this dataset, with those 8 being labeled as:  
+`antelope_duiker`  
+`bird`  
+`blank`  
+`civet_genet`  
+`hog`  
+`leopard`  
+`monkey_prosimian`  
+`rodent`  
 
 
 ![graph1](./images/classes.png)
  
  
-I also took a look at the size of the dataset, which was found to be ‘16488.0’.
+I also took a look at the size of the dataset, which was found to be `16488.0`.
  
 After finding the total size of the dataset, I wanted to take a look at each class to see if we might have a potential imbalanced dataset.
  
-Sum of each class:
-‘monkey_prosimian    2492.0’
-‘antelope_duiker     2474.0’
-‘civet_genet         2423.0’
-‘leopard             2254.0’
-‘blank               2213.0’
-‘rodent              2013.0’
-‘bird                1641.0’
-‘hog                  978.0’
+Sum of each class:  
+`monkey_prosimian    2492.0`  
+`antelope_duiker     2474.0`  
+`civet_genet         2423.0`  
+`leopard             2254.0`  
+`blank               2213.0`  
+`rodent              2013.0`  
+`bird                1641.0`  
+`hog                  978.0`  
  
-Percentage of each class:
-‘monkey_prosimian    0.151140’
-‘antelope_duiker     0.150049’
-‘civet_genet         0.146955’
-‘leopard             0.136705’
-‘blank               0.134219’
-‘rodent              0.122089’
-‘bird                0.099527’
-‘hog                 0.059316’
+Percentage of each class:  
+`monkey_prosimian    0.151140`  
+`antelope_duiker     0.150049`  
+`civet_genet         0.146955`  
+`leopard             0.136705`  
+`blank               0.134219`  
+`rodent              0.122089`  
+`bird                0.099527`  
+`hog                 0.059316`  
  
  
 ## Image Classification Modeling
