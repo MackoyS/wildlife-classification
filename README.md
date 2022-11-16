@@ -23,7 +23,7 @@ My final CNN based image classification system has an overall accuracy of 86%. T
 This project is completed through the jupyter notebook labeled as `main_notebook.ipynb`.
 
 ## Dataset
-The dataset can be found here and can be downloaded in a zipped folder. The dataset inside of this folder are:
+The dataset can be found [here](https://www.drivendata.org/competitions/87/competition-image-classification-wildlife-conservation/page/409/) and can be downloaded in a zipped folder. The dataset inside of this folder are:
 
 Test_features.csv, train_features.csv, and train_labels.csv.
 
