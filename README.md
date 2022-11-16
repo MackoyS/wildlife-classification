@@ -3,7 +3,7 @@
 
 ![graph8](./images/tai_map.jpg)
 
-For this capstone project, I worked with a hypothetical client Taï National Park to help analyze over 16,500 still images from 8 image classes to create a multi-image classification model that would help their researchers correctly identify the image class. With our analysis and modeling, our stakeholder Taï National Park can use our data driven insights to help identify poor performing camera traps and accurately identify local wildlife for their ebola virus research.
+For this capstone project, I worked with a hypothetical client Taï National Park to help analyze over 16,500 still images from 8 image classes to create a multi-image classification model that would help their researchers correctly identify the image class. With my analysis and modeling, my stakeholder Taï National Park can use my data driven insights to help identify poor performing camera traps and accurately identify local wildlife for their ebola virus research.
 
 ## Business Objective
 With the number of photos that camera traps can take increasing as technology in the field gets better and better, it is more important than ever that NGOs and Research Organizations find ways to keep their scientists and researchers doing what they were hired to do. In the Taï National Parks case, they are studying the local Ebola Virus variant to find out how it came to the National Park and how it is transmitted. Through this image classification model, researchers will be heading towards a system where they can touch one button and sort through thousands of images accurately. This way they will be able to get back to their focus on discovering how Ebola came to be and how it transmits inside of Taï National Park.
@@ -17,7 +17,7 @@ For example, create a binary classification for Western Chimpanzees (a common sp
 Set a Probability Threshold for Images
 I.e. send tougher images to a trained analyst.
 
-Our final CNN based image classification system has an overall accuracy of 86%. This means that if an image is provided to our model, it has an 86% probability of correctly identifying the image. As a side note, this breakdown does change between image classes with blank images having a 95% accuracy score for example.
+My final CNN based image classification system has an overall accuracy of 86%. This means that if an image is provided to my model, it has an 86% probability of correctly identifying the image. As a side note, this breakdown does change between image classes with blank images having a 95% accuracy score for example.
 
 ## The Notebooks
 This project is completed through the jupyter notebook labeled as ‘main_notebook.ipynb’.
@@ -70,9 +70,9 @@ Percentage of each class:
  
  
 ## Image Classification Modeling
-For our classification modeling we started off with our baseline model, or the bare minimum accuracy that we had to beat. The baseline model for this image classification is going to be if we randomly guessed 1 of the animal classes for every image. This would give us an accuracy of 12.5% (1/8). We could also use the ‘monkey_prosimian 10.151140%’ (its weight in the dataset) for an 15.11% accuracy. 
+For my classification modeling we started off with my baseline model, or the bare minimum accuracy that we had to beat. The baseline model for this image classification is going to be if we randomly guessed 1 of the animal classes for every image. This would give us an accuracy of 12.5% (1/8). We could also use the ‘monkey_prosimian 10.151140%’ (its weight in the dataset) for an 15.11% accuracy. 
  
-We then moved to an initial convolutional neural net model with 1 epoch followed with a model with an epoch of 10. Our first CNN model had an overall accuracy of 67% with our final model having an overall accuracy of 86%. Due to the length of processing time this took, a decision was made to finalize our model on the second attempt to ensure that a minimum viable product could be created to finalize this capstone project. The best model found is the one that uses 10 epochs for its learning. This improved our accuracy from 15% to a final 86%.
+We then moved to an initial convolutional neural net model with 1 epoch followed with a model with an epoch of 10. My first CNN model had an overall accuracy of 67% with my final model having an overall accuracy of 86%. Due to the length of processing time this took, a decision was made to finalize my model on the second attempt to ensure that a minimum viable product could be created to finalize this capstone project. The best model found is the one that uses 10 epochs for its learning. This improved my accuracy from 15% to a final 86%.
  
 ### Epoch 1 Model
  
@@ -101,17 +101,16 @@ Develop an analysis for moving images and videos. This model was developed on st
 Tracking movement patterns of specific animal groups. For example, develop a way to use the location of the camera and see if there is a hypothetical trail that can be created to see where the animal has moved to within the park.
  
 ## For More Information
-Please review our full analysis in [our Jupyter Notebook](./main_notebook
-.ipynb) or our [presentation](./presentation.pdf).
+Please review my full analysis in [my Jupyter Notebook](./main_notebook
+.ipynb) or my [presentation](./presentation.pdf).
  
 For any additional questions, please contact **Mackoy Staloch | mackoy.staloch@gmail.com**
  
 ## Repository Structure
 ```
-├── README.md                          <- The top-level README for reviewers of this project
-├── main_notebook
-.ipynb             <- Narrative documentation of analysis in Jupyter notebook
-├── presentation.pdf                      <- PDF version of project presentation
-├── data                                        <- Both sourced externally and generated from code
-└── images                                   <- Both sourced externally and generated from code
+├── README.md                       <- The top-level README for reviewers of this project
+├── main_notebook.ipynb             <- Narrative documentation of analysis in Jupyter notebook
+├── presentation.pdf                <- PDF version of project presentation
+├── data                            <- Both sourced externally and generated from code
+└── images                          <- Both sourced externally and generated from code
 ```
